@@ -1,0 +1,162 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: #fff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+.right{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+    gap: 20px;
+    margin-top: 20px;
+}
+.btn{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 208, 0);
+    font-size: 15px;
+    cursor: pointer;
+}
+input{
+    height: 30px;
+    width: 190px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #151e07;
+
+}
+.script{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+    padding: 40px;
+    place-items: center;
+}
+.many_images{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    max-width: 400px;
+    max-height: 500px;
+    text-align: center;
+    letter-spacing: 2.5px;
+    line-height: 25px;
+    padding: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.many_images.img{
+    max-width: 300px;
+    cursor: none;
+}
+.many_images h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 5px;
+    cursor: initial;
+}
+.many_images p{
+    font-size: 16px;
+    cursor: initial;
+}
+butn{
+    height: 40px;
+    width: 300px;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 15px;
+}
+.close-btn{
+    background: transparent;
+    border: none;
+    position: absolute;
+    left: 92%;
+    font-size: 29px;
+}
+.recipe-ingredient{
+    position: absolute;
+    text-align: left;
+    overflow: hidden;
+}
+
+.recipe-ingredient div h3{
+    margin-top: 10px;
+}
+.recipe-detils{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: yellow;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    line-height: 30px;
+    overflow-y: scroll;
+    transition: all .5s ease-in-out;
+        .close-btn{
+        z-index: 2;
+    }
+}
+ul{
+    text-align: left;
+}
+.recipeNAME{
+    text-decoration: underline;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    width: 50px;
+    
+}
+button i{
+    cursor: pointer;
+}
+.script{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
